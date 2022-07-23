@@ -1,0 +1,11 @@
+<%- include("./partials/header.ejs") %>
+
+<h1 class="section-title">Blog Detail</h1>
+<a href="/blogs" class="back">Back</a>
+<div class="box">
+    <h3 class="title"><%= blog.title %></h3>
+    <p class="para"><%= blog.snippet %></p>
+    <p class="para"><%= blog.body %></p>
+</div>
+
+<%- include("./partials/footer.ejs") %>
