@@ -8,8 +8,8 @@ const app = express();
 //connect to mongodb
 const dbUrl = 'mongodb+srv://thiri:thiriwin12345@blog.9mprpnt.mongodb.net/?retryWrites=true&w=majority'
 
-mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true})
-// mongoose.connect("mongodb://localhost:27017/blog")
+// mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb://localhost:27017/blog")
     .then(result => app.listen(3000))
     .catch(err => console.log(err));
 
